@@ -1,0 +1,111 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my byd",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SayHelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "hi",
+                        "hello",
+                        "hey",
+                        "good day",
+                        "howdy",
+                        "greetings",
+                        "namaste",
+                        "aloha",
+                        "hola",
+                        "bonjour",
+                        "hiya",
+                        "gday",
+                        "test"
+                    ]
+                },
+                {
+                    "name": "RequestInfoIntent",
+                    "slots": [
+                        {
+                            "name": "infoTypeRequested",
+                            "type": "infoType"
+                        }
+                    ],
+                    "samples": [
+                        "tell me car {infoTypeRequested}",
+                        "what is car {infoTypeRequested}",
+                        "give me car {infoTypeRequested}",
+                        "{infoTypeRequested}",
+                        "what is {infoTypeRequested}",
+                        "what's {infoTypeRequested}",
+                        "what's car {infoTypeRequested}",
+                        "get me {infoTypeRequested}",
+                        "give me {infoTypeRequested}",
+                        "provide {infoTypeRequested}",
+                        "what are {infoTypeRequested}",
+                        "tell me {infoTypeRequested}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "infoType",
+                    "values": [
+                        {
+                            "id": "doorStatus",
+                            "name": {
+                                "value": "door",
+                                "synonyms": [
+                                    "door",
+                                    "door is open",
+                                    "door is close",
+                                    "door open",
+                                    "door close",
+                                    "is the door open",
+                                    "is the door close"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "allInfo",
+                            "name": {
+                                "value": "all info",
+                                "synonyms": [
+                                    "status",
+                                    "everything about car",
+                                    "all you know about car",
+                                    "all car's details",
+                                    "my car data",
+                                    "full set of details",
+                                    "all info",
+                                    "car entire profile",
+                                    "all information",
+                                    "all of it"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
