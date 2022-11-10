@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "my byd",
+            "invocationName": "my b.y.d",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
